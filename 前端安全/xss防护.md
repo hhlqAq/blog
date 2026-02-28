@@ -85,6 +85,7 @@ this.userName = this.$route.query.name; // 若参数为 <script>alert('xss')</sc
 防护方案：
  - URL 参数净化：获取参数后，用 DOMPurify 或简单转义处理：
  - 本地存储数据过滤：存入本地存储前过滤，取出后再次过滤（避免存储已被篡改的恶意内容）
+  
 # 三、工程化防护：从构建 / 部署层面减少风险
 ## 1.启用 CSP（内容安全策略）
 ```nginx
